@@ -1,38 +1,70 @@
-.App {
+body{
+  background: url("https://image.winudf.com/v2/image1/Y29tLlF1YWxpdGVTdHVkaW9zLlJlYWxEcnVtc19zY3JlZW5fMV8xNTUyOTc3NjcyXzA2MA/screen-1.jpg?fakeurl=1&type=.jpg");
+  backdrop-filter: blur(8px);
+  height: 95vh;
+}
+.App h1{
+  color: aliceblue;
   text-align: center;
+  font-size: 3rem;
+}
+.title{
+  text-align: center;
+  visibility: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container{
+  min-width: 800px;
+  max-width: 801px;
+  border: 0.5rem solid rgb(175, 171, 171);
+  border-radius: 1.5rem;
+  margin-left: 23rem;
+  margin-top: 3rem;
+  background-color: rgb(29, 11, 11);
+  padding: 1.5rem;
+  position: relative;
+}
+.drumpad{
+  cursor: pointer;
+  border: 0.3rem solid rgb(197, 198, 199);
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin: 1rem;
+  width:120px;
+  height: 100px;
+  min-width: 119px;
+  background-color: rgb(255, 253, 151);
+}
+.drumpad:hover{
+ transform: scale(1.1);
+}
+@media screen and (max-width: 480px){
+  .App h1{
+    font-size: 2rem;
+  }
+  .container{
+    min-width: 320px;
+    max-width: 321px;
+    margin-left:2rem;
+    padding: 0.5rem;
+   
+  }
+  .drumpad{
+    padding: 0.2rem;
+    margin: 0.5rem 0.5rem;
+    width:100px;
+    height: 70px;
+    min-width: 101px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 370px){
+  .container{
+    margin-left:0.2rem;
   }
 }
